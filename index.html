@@ -8,11 +8,25 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://kit.fontawesome.com/c786fd45d4.js"
       crossorigin="anonymous"
     ></script>
     <script src="js/main.js" defer></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -32,18 +46,25 @@
             </div>
           </div>
           <div class="header__info-box">
-            <span class="info__desc"
-              >#에이전시 2년 5개월 근무 #디자인 할 수 있는 퍼블리셔 #인터렉티브
-              웹을 지향함 #정직하게 작업함 #누구와도 잘 어울릴 수 있음</span
+            <marquee width="50%" behavior="scroll">
+              <span class="info__desc"
+                >#웹 에이전시 2년 5개월 근무 #디자인 할 수 있는 퍼블리셔
+                #인터렉티브 웹을 지향함 #정직하게 작업함 #누구와도 잘 어울릴 수
+                있음 #웃음이 많고 예의바름:D</span
+              ></marquee
             >
           </div>
         </div>
       </header>
       <div class="visual__wrap">
         <img src="imgs/img_01.jpg" alt="" />
-        <div class="visual__text">
+        <div class="visual__title">
+          <h2>그는<br />누구인가?</h2>
+          <p></p>
+        </div>
+        <div class="info__text">
           <ul class="info__box">
-            <li class="info__title">배가현(만32세)</li>
+            <li class="info__title">배가현<em>(만32세)</em></li>
             <li>업무: 디자인/퍼블리싱</li>
             <li>
               경력: 3년 (에이전시 2년 5개월)
@@ -54,7 +75,7 @@
             </li>
           </ul>
           <ul class="info__box">
-            <li class="info__title">기술능력</li>
+            <li class="info__title">작업능력</li>
             <li>HTML / CSS : 상 (MDN 활용가능)</li>
             <li>
               javaScript : 중 (MDN 활용가능)
@@ -64,8 +85,225 @@
               </ul>
             </li>
           </ul>
+          <ul class="info__box">
+            <li class="info__title">기타사항</li>
+            <li>직장내에서 친화력이 뛰어남</li>
+            <li></li>
+          </ul>
         </div>
       </div>
+      <div class="project__wrap">
+        <section class="project__work">
+          <div class="slider__title">
+            <div class="slider__header">
+              <h2>회사 프로젝트</h2>
+              <div class="slider__bt">
+                <span id="work__bt-prev" class="btn"><b>이전</b></span>
+                <span id="work__bt-next" class="btn"><b>다음</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="work__slider">
+            <ul>
+              <li class="item">
+                <dl class="item__info">
+                  <dt>해신홀딩스</dt>
+                  <dd>
+                    전 페이지 코딩 작업을 진행했습니다.<br />
+                    (HTML + CSS + JavaScript)
+                  </dd>
+                  <a
+                    href="https://www.designart.co.kr/new/portfolio_view.php?g=h&no=306"
+                    target="_blank"
+                    >바로가기</a
+                  >
+                </dl>
+                <img src="imgs/work_01.gif" alt="해신홀딩스" />
+              </li>
+              <li class="item">
+                <dl class="item__info">
+                  <dt>대흥소프트밀</dt>
+                  <dd>
+                    메인페이지 및 디자인페이지 리뉴얼<br />
+                    (HTML + CSS + JavaScript)
+                  </dd>
+                  <a href="http://www.softmill.co.kr/" target="_blank"
+                    >바로가기</a
+                  >
+                </dl>
+                <img src="imgs/work_02.gif" alt="대흥소프트밀" />
+              </li>
+              <li class="item">
+                <dl class="item__info">
+                  <dt>헬파TLS</dt>
+                  <dd>
+                    전 페이지 코딩 작업을 진행했습니다.<br />
+                    (HTML + CSS + JavaScript)
+                  </dd>
+                  <a href="http://hptls.co.kr/" target="_blank">바로가기</a>
+                </dl>
+                <img src="imgs/work_03.gif" alt="헬파TLS" />
+              </li>
+              <li class="item">
+                <dl class="item__info">
+                  <dt>에이드커뮤니케이션</dt>
+                  <dd>
+                    메인페이지 디자인 작업과 코딩 작업을 진행했습니다.<br />
+                    (HTML + CSS + JavaScript)
+                  </dd>
+                  <a href="http://www.aidcomm.co.kr/" target="_blank"
+                    >바로가기</a
+                  >
+                </dl>
+                <img src="imgs/work_04.gif" alt="에이드커뮤니케이션" />
+              </li>
+              <li class="item">
+                <dl class="item__info">
+                  <dt>메이크어위시</dt>
+                  <dd>
+                    홈페이지 유지보수 및 이벤트 페이지<br />
+                    디자인 코딩 작업을 진행했습니다.
+                  </dd>
+                  <a
+                    href="https://www.designart.co.kr/new/portfolio_view.php?g=h&no=306"
+                    target="_blank"
+                    >바로가기</a
+                  >
+                </dl>
+                <img src="imgs/work_05.gif" alt="메이크어위시" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="project__personal">
+          <div class="slider__title">
+            <div class="slider__header">
+              <h2>개인 프로젝트</h2>
+              <div class="slider__bt">
+                <span id="personal__bt-prev" class="btn"><b>이전</b></span>
+                <span id="personal__bt-next" class="btn"><b>다음</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="personal__slider">
+            <ul>
+              <li class="item">
+                <dl class="item__info">
+                  <dt>해신홀딩스</dt>
+                  <dd>
+                    전 페이지 코딩작업을 진행했습니다.<br />
+                    (HTML + CSS + JavaScript)
+                  </dd>
+                  <a
+                    href="https://www.designart.co.kr/new/portfolio_view.php?g=h&no=306"
+                    target="_blank"
+                    >바로가기</a
+                  >
+                </dl>
+                <img src="imgs/work_02.gif" alt="해신홀딩스" />
+              </li>
+              <li class="item">
+                <dl class="item__info">
+                  <dt>해신홀딩스</dt>
+                  <dd>
+                    전 페이지 코딩작업을 진행했습니다.<br />
+                    (HTML + CSS + JavaScript)
+                  </dd>
+                  <a
+                    href="https://www.designart.co.kr/new/portfolio_view.php?g=h&no=306"
+                    target="_blank"
+                    >바로가기</a
+                  >
+                </dl>
+                <img src="imgs/work_03.gif" alt="헬파TLS" />
+              </li>
+              <li class="item">
+                <dl class="item__info">
+                  <dt>헬파TLS(국문/영문/일문)</dt>
+                  <dd>
+                    전 페이지 코딩작업을 진행했습니다.<br />
+                    (HTML + CSS + JavaScript)
+                  </dd>
+                  <a
+                    href="https://www.designart.co.kr/new/portfolio_view.php?g=h&no=306"
+                    target="_blank"
+                    >바로가기</a
+                  >
+                </dl>
+                <img src="imgs/work_01.gif" alt="해신홀딩스" />
+              </li>
+              <li class="item">
+                <dl class="item__info">
+                  <dt>해신홀딩스</dt>
+                  <dd>
+                    전 페이지 코딩작업을 진행했습니다.<br />
+                    (HTML + CSS + JavaScript)
+                  </dd>
+                  <a
+                    href="https://www.designart.co.kr/new/portfolio_view.php?g=h&no=306"
+                    target="_blank"
+                    >바로가기</a
+                  >
+                </dl>
+                <img src="imgs/work_01.gif" alt="해신홀딩스" />
+              </li>
+              <li class="item">
+                <dl class="item__info">
+                  <dt>해신홀딩스</dt>
+                  <dd>
+                    전 페이지 코딩작업을 진행했습니다.<br />
+                    (HTML + CSS + JavaScript)
+                  </dd>
+                  <a
+                    href="https://www.designart.co.kr/new/portfolio_view.php?g=h&no=306"
+                    target="_blank"
+                    >바로가기</a
+                  >
+                </dl>
+                <img src="imgs/work_01.gif" alt="해신홀딩스" />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="contact__wrap">
+        <p class="contact__title">
+          제 포트폴리오가 마음에 드신다면 연락 부탁드립니다.
+        </p>
+        <ul class="contact__box">
+          <li class="contact__list">
+            <i class="fas fa-envelope"></i>
+            <strong>E-mail</strong>
+            <span>1988_b@naver.com</span>
+          </li>
+          <li class="contact__list">
+            <i class="fas fa-mobile-alt"></i>
+            <strong>Phone</strong>
+            <span>010.3194.7897</span>
+          </li>
+        </ul>
+      </div>
+      <footer>
+        <p>Copyright 2020. Baegoon All rights reserved.</p>
+      </footer>
     </div>
+    <script>
+      $(document).ready(function () {
+        $(".work__slider ul").slick({
+          arrows: true,
+          infinite: true,
+          pauseOnHover: false,
+          prevArrow: $("#work__bt-prev"),
+          nextArrow: $("#work__bt-next"),
+        });
+        $(".personal__slider ul").slick({
+          arrows: true,
+          infinite: true,
+          pauseOnHover: false,
+          prevArrow: $("#personal__bt-prev"),
+          nextArrow: $("#personal__bt-next"),
+        });
+      });
+    </script>
   </body>
 </html>
